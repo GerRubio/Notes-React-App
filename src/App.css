@@ -1,22 +1,35 @@
-.App {
+body {
+  background: #00c9ff;
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+  background: linear-gradient(to right, #92FE9D, #00C9FF);
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.notesHeader,
+.notesBody,
+.notesFooter {
+  background-color: RGBA(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 20px;
 }
 
-.App-link {
-  color: #09d3ac;
+.notesBody {
+  margin-top: 20px;
+}
+
+.notesHeader {
+  font-family: "Lobster", cursive;
+}
+
+.notesFooter {
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
 }
